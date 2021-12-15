@@ -1,0 +1,155 @@
+Width rules
+Is there a minimum width in which you can build a storage unit - if so what should that be set to initially?
+Is there a maximum width in which you can build a storage unit - if so what should that be set to initially.
+    - Partitions (not sure on the correct terminology)
+        What is the minimum width for a partition e.g. can you have a partition in a unit that is only 500mm wide?
+        What is the maximum width without a partition e.g. if a unit exceeds x in width does it have to have a partition
+        What is the minimum width between partitions?
+        What is the maximum width between partitions?
+
+Height
+Is there a minimum height in which you can build a storage unit - if so what should that be set to initially?
+Is there a maximum height in which you can build a storage unit - if so what should that be set to initially.
+Or are units always a set height?
+    - Partitions (not sure on the correct terminology)
+        Do Partitions always have to be full height of the unit?
+
+Depth
+Is there a minimum depth in which you can build a storage unit - if so what should that be set to initially?
+Is there a maximum depth in which you can build a storage unit - if so what should that be set to initially.
+Or are units always a set depth?
+    - Partitions (not sure on the correct terminology)
+        Do Partitions always have to be full depth of the unit?
+        If they are not always full depth, can the offset be from the front only, or front and back?
+
+Components
+    Drawers
+        Can a drawers width change? if so what is the minimum and maximum width of a drawer?
+        If not what is the set width of a drawer?
+        Can a drawers height change? if so what is the minimum and maximum height of a drawer?
+        If not what is the height of a drawer?
+        Is a drawers front the same height as it's sides or can it be larger?
+        If it can be larger does it spread out from bottom, top and sides or just topo, bottom etc?
+        Are drawers directly mounted into the wardrobe or will there be the option for them to be mounted within their own carcass?
+        focusing on the question above, i see this as drawers being a half width of the partition they are in, if that is the case
+        does the carcass cover all 4 edges or just 3 and then the 4th edge is the side panel or partition panel?
+        is there a gap between drawers? if so can it change? if so what is the minimum gap and maximum gap?
+        If it doesnt change what is the set gap between drawers?
+    Shelving
+        Can a shelves width change? if so what is the minimum and maximum width of a shelf?
+         If not what is the set width of a shelf?
+         Can a shelves thickness change? if so what is the minimum and maximum height of a shelf?
+         If not what is the thickness of a shelf?
+         What is the minimum distance between two shelves?
+         What is the maximum distance between two shelves?
+         Is a shelf always flush with the front of the unit?
+         if not how far is the offset from the front, is it changeable?
+         If it is changeable what is the maximum distance it can be offset from the front dependent on width
+         And what is the minimum distance it can be offset from the front dependent on depth?
+    Rails
+        Can rails widths change?
+        If so what is the minimum, maximum width of a rail?
+        At what point does a rails width mean it needs additional support in the middle?
+        What is the maximum distance allowed beneath a rail and what is the minimum allowed?
+        can rails only be at the top of a unit?
+        Do rails have any additional housing?
+        Is there only one type of rail?
+    Show racks
+        Can show racks change in height?
+        If so what is the minimum/maximum height of a shoe rack?
+        Are there multiple configurations for a shoe rack or do they all follow the same design?
+        Can show racks only be at the bottom of the unit?
+        What is the distance required above a shoe rack before another component.
+
+
+Morning guys - Mid way update for you. (ALL SCREEN GRABS AND VIDEOS BEING SENT BY EMAIL AS TOO BIG FOR WHATSAPP)
+
+Engine update - I have fully built the engine in which this entire system will run.
+Ally you will probably have a better idea as to what an engine will do but just to clarify and bring you both up to speed.
+The engine is essentially a low level program that I can build the system within.
+The engine takes care of things such as importing of objects, meshes, rendering, memory, processing power and much more.
+It is written in a low level programming language that speaks directly with the processor and memory.
+The reason we needed to build our own engine opposed to using something like unreal or unity is memory and speed.
+Unity and Unreal are extremely powerful but they have so much bloat, at the end of the day engines this size are used to build
+full on games so running these engines in a browser and expecting it to render real time is just not going to happen.
+
+Time spent - 80 Hours
+Engine - done!
+
+UI (GUI) - The UI (User interface) is now fully structured and working. Personally i think it looks clean, simple and its easy to use.
+THe user interface handles all of the input from the user. Please see screenshots attached to see what the user interface looks like.
+The user interface is dynamic and content will change depending on components you upload and parameters you define.
+
+Time Spent 20 hours
+
+Camera - Probably one of the more fiddly parts of the build, the camera is now working as intended. As you may remember when we were
+looking at that other system the camera was driving me up the wall, i really don't want that to be an issue for the users of this system because
+frustration leads to incomplete orders. There fore i have programmed and developed what i call a swing arm camera. It essentially latches itself to the product
+at 0,0,0 and can rotate around it on the X and Y access freely however i have built in a function that allows the user to recenter the camera if they
+reach an angle they dislike without having to try and find their way back. Another cool feature about the camera is the object itself doesnt move
+the camera rotates the object.
+
+Time spend 30 hours
+
+System Part 1 - With the engine running, the camera working very well, the user interface working i've been able to make some progression with the system itself.
+At this point it is important that i express the true freedom of this system, and the complexities that arise with that and what I have done
+to allow for this.
+
+Space detection, first and foremost a storage unit needs to fit into a specific space.
+The space itself has to be defined by the customer, this can be define by the use of an image (augmented reality) or manual input of measurements concerning the space.
+If a user doesn't have a picture they enter the width of their space, the depth and the height.
+If a user has a picture they upload it, at this point the system takes that image and will try to work out the measurements of the space in the image.
+If the system is unable to, due to bad imagery or something it will ask the customer to input manually.
+Now that we have a space the first part of very complex programming takes place.
+The system will draw the frame of the wardrobe, the side panels, the top, the bottom and the back.
+It makes a shell to fit that space.
+
+Partition rendering
+The next stage is to ask the customer how many partitions they want in the unit, hard coded rules affect this and so it is important to understand the
+parameters me and Ally spoke about this week. If the unit is to small it will not give the customer the partition option and if the unit is so big
+it has to have a partition by default it will automatically place one (or more where required).
+The user is able to move increase/decrease the number of partitions but again this is all dependent on the rules you define.
+and the system renders these partitions out live!
+
+Section rendering
+Now the partitions are in place the system detects areas in which components can be placed.
+we focus on a section at the time to the customer, AREAS ARE SHOWN IN THEIR SMALLEST POSSIBLE SIZE but they can be grouped to make larger
+sections.
+
+Time spent on system so far - 20 hours
+
+Total time spent so far - 150 hours
+Estimated hours work left until completion - 150 hours (System finish, testing, integrating with WEBGL, creating backend section for website - pushing live)
+
+
+I understand that a lot of this may sound really complex, not make sense, you may even think this doesn't sound like what we asked for.
+You have to trust me that this allows for ultimate flexibility (depended on hardcoded rules) for the user and hopefully the screen grabs and recordings allow you to understand
+what i mean in each section.
+
+
+// X line
+        dim = new LinearDimension(document.body, renderer, camera, scene);
+        let from = new THREE.Vector3(boundingBox.min.x, boundingBox.min.y, boundingBox.min.z);
+        let to = new THREE.Vector3(boundingBox.max.x, boundingBox.min.y, boundingBox.max.z);
+        let direction = new THREE.Vector3(0, 0, 0.1);
+        let newDimension = dim.create(from, to, direction);
+        root.add(newDimension);
+
+        // Z line
+        dimZ = new LinearDimension(document.body, renderer, camera, scene);
+        let fromZ = new THREE.Vector3(boundingBox.max.x, boundingBox.min.y, boundingBox.min.z);
+        let toZ = new THREE.Vector3(boundingBox.max.x, boundingBox.min.y, boundingBox.max.z);
+        let directionZ = new THREE.Vector3(0.1, 0, 0);
+        let newDimensionZ = dimZ.create(fromZ, toZ, directionZ);
+        root.add(newDimensionZ);
+
+        // Y line
+        dimY = new LinearDimension(document.body, renderer, camera, scene);
+        let fromY = new THREE.Vector3(boundingBox.min.x, boundingBox.min.y, boundingBox.max.z);
+        let toY = new THREE.Vector3(boundingBox.min.x, boundingBox.max.y, boundingBox.max.z);
+        let directionY = new THREE.Vector3(-0.1, 0, 0);
+        let newDimensionY = dimY.create(fromY, toY, directionY);
+        root.add(newDimensionY);
+
+
+
