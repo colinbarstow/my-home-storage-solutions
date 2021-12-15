@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f03ed921-074b-47b4-b817-2fb12890cd4f" name="Default Changelist" comment="reboot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +172,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mbFBvCsRrwFY04q0jFEUzh0Iu6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -322,7 +324,7 @@
       <workItem from="1639573548703" duration="51000" />
       <workItem from="1639575479363" duration="488000" />
       <workItem from="1639581222456" duration="2322000" />
-      <workItem from="1639586206110" duration="5564000" />
+      <workItem from="1639586206110" duration="8226000" />
     </task>
     <task id="LOCAL-00001" summary="reboot">
       <created>1613996341581</created>
